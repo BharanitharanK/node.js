@@ -10,7 +10,7 @@ header{
 
     height: 50px;
     width: 1366px;
-    color:#900C3F;
+    color:#FDFEFE;
     text-align:center
 }
 form{
@@ -21,6 +21,6 @@ form{
     height: 140px;
     width: 250px;
     text-align:center;
-    color: #900C3F;
+    color: #FDFEFE;
     border: 300px;
 }
