@@ -12,14 +12,15 @@
     <header>
         <h1> welcome </h1>
     </header>
-<form action="/login" method="post">
+<form name="welcome"" action="/login" method="post">
  User Email-Id:<br />
-      <input name="id" type="text"/>
+      <input id="email" name="emailid" type="text"/>
 <br/>
  Password:<br />
-       <input name="password" type="password" />
+       <input id="password" name="password" type="password" />
 <br/>
-       <button type="submit" >login</button>
+       <button type="submit" onclick="return validate()">login</button>
    </form>
+   <script src="../js/email-validate.js"></script>
 </body>
 </html>
