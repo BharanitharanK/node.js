@@ -1,0 +1,26 @@
+body{
+    font-family: 'Pacifico', cursive;
+    background-image: url('../img/welcome.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center;  
+}
+
+header{
+
+    height: 50px;
+    width: 1366px;
+    color:#900C3F;
+    text-align:center
+}
+form{
+        margin-top: 200px;
+		margin-right:auto;
+		margin-bottom:auto;
+        margin-left:auto;
+    height: 140px;
+    width: 250px;
+    text-align:center;
+    color: #900C3F;
+    border: 300px;
+}
