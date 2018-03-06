@@ -1,1 +1,27 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up</title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="..\..\node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"/>
+        <link href="..\css\signup.css" rel="stylesheet"/>
+    <body>
+        <form name='sign up' action='/signup' method='post'>
+        EmailId:
+        </br>
+        <input id='email' type='text'' name='emailid'></input>
+        </br>
+        Name:
+        </br>
+        <input type='text' name='name'></input>
+        </br>
+        Password:
+        </br>
+        <input id='password1' type='password' name='password1'></input>
+        </br>
+        re-enter password:
+        </br>
+        <input id='password2' type='password' name='password2'></input>
+        <button type='submit' onclick="return validate()">submit</button>
+        </form>
+        <script src="../js/signup.js"></script>
