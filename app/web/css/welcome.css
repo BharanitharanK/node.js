@@ -3,14 +3,14 @@ body{
     background-image: url('../img/welcome.jpg');
     background-size:     cover;
     background-repeat:   no-repeat;
-    background-position: center;  
+    background-position: 0 0;  
 }
 
 header{
 
     height: 50px;
     width: 1366px;
-    color:#FDFEFE;
+    color:#5D6D7E;
     text-align:center;
 }
 form{
