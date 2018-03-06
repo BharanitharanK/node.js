@@ -28,7 +28,7 @@ app.post('/login',function(req,res){
   req.session.user=req.body.emailid;
   user=req.body.emailid;
   req.session.admin=true;
-  res.send(req.body);
+  res.redirect('/home');
 });
 app.get('/home',auth,function(req,res){
 res.sendFile(__dirname+'/web/html/home.html');
