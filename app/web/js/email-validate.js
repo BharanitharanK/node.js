@@ -10,7 +10,7 @@ var password = document.getElementById('password').value;
     return false;
     }
     else if(password.length<6){
-    alert('password must be 7 characters');
+    alert('password must be more than 6 characters');
     password.focus;
     return false;
     }
