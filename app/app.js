@@ -18,7 +18,7 @@ if(req.session.user===user&&req.session.admin){
 }
 else
 {
-  return res.redirect('/login');
+  return res.redirect('/');
 }
 }
 app.get('/',function(req,res){
