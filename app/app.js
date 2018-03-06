@@ -10,13 +10,27 @@ app.use(cookie({
   secret:'authentication',
   maxAge:24*60 * 60 * 1000
 }))
+var user;
+var auth=function(req,res,next)
+{
+if(req.session.user===user&&req.session.admin){
+  return next();
+}
+else
+{
+  return res.redirect('/login');
+}
+}
 app.get('/',function(req,res){
   res.sendFile(__dirname+'/web/html/welcome.html');
 });
 app.post('/login',function(req,res){
+  req.session.user=req.body.emailid;
+  user=req.body.emailid;
+  req.session.admin=true;
   res.send(req.body);
 });
-app.get('/home',function(req,res){
-res.sendFile(__dirname+'/view.html')
+app.get('/home',auth,function(req,res){
+res.sendFile(__dirname+'/web/html/home.html');
 });
 app.listen('8080');
