@@ -10,7 +10,7 @@ app.get('/',function(req,res){
 app.post('/login',function(req,res){
   res.send(req.body);
 });
-app.get('/view',function(req,res){
+app.get('/home',function(req,res){
 res.sendFile(__dirname+'/view.html')
 });
 app.listen('8080');
