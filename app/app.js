@@ -24,8 +24,11 @@ else
 app.get('/',function(req,res){
   res.sendFile(__dirname+'/web/html/welcome.html');
 });
+app.get('/signup',function(req,res){
+  res.sendFile(__dirname+'/web/html/signup.html');
+});
 app.post('/signup',function(req,res){
-  res.send("signedup");
+  res.send('signedup');
 });
 app.post('/login',function(req,res){
   req.session.user=req.body.emailid;
