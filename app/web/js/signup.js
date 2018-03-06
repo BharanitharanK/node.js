@@ -12,12 +12,17 @@ var password2 = document.getElementById('password2').value;
     }
     else if(password1.length<7){
     alert('password must be more than 6 characters');
-    password.focus;
+    password1.focus;
     return false;
    }
-    else if(password1===password2){
+   else if(password2.length<7){
+    alert('password must be more than 6 characters');
+    password1.focus;
+    return false;
+   }
+    else if(!(password1===password2)){
     alert('password mismatch');
-    password.focus;
+    password2.focus;
     return false;
     }
 }

@@ -6,6 +6,9 @@
         <link href="..\..\node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet"/>
         <link href="..\css\signup.css" rel="stylesheet"/>
     <body>
+        <header>
+        <h1> signup </h1>
+        </header>
         <form name='sign up' action='/signup' method='post'>
         EmailId:
         </br>
@@ -22,6 +25,7 @@
         re-enter password:
         </br>
         <input id='password2' type='password' name='password2'></input>
+        </br>
         <button type='submit' onclick="return validate()">submit</button>
         </form>
         <script src="../js/signup.js"></script>
